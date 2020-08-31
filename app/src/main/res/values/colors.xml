@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- theme colors -->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorSecondary">#1c1c1c</color>
+    <color name="colorSecondaryVariant">#aaaaaa</color>
+    <color name="colorTertiary">#333333</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <!-- holo colors (plus some bonuses) -->
+    <color name="holoBlueLight">#33b5e5</color>
+    <color name="holoGreenLight">#99cc00</color>
+    <color name="holoRedLight">#ff4444</color>
+    <color name="holoBlueDark">#0099cc</color>
+    <color name="holoGreenDark">#669900</color>
+    <color name="holoRedDark">#cc0000</color>
+    <color name="holoPurpleDark">#79349c</color>
+    <color name="holoPurpleLight">#aa66cc</color>
+    <color name="holoOrangeLight">#ffbb33</color>
+    <color name="holoOrangeDark">#ff8800</color>
+    <color name="holoBlueBright">#00ddff</color>
+
+    <!-- available colors for list customization -->
+    <array name="list_colors">
+        <item>@color/colorAccent</item>
+        <item>@color/holoRedDark</item>
+        <item>@color/holoRedLight</item>
+        <item>@color/holoBlueDark</item>
+        <item>@color/holoBlueLight</item>
+        <item>@color/holoBlueBright</item>
+        <item>@color/holoGreenDark</item>
+        <item>@color/holoGreenLight</item>
+        <item>@color/holoPurpleDark</item>
+        <item>@color/holoPurpleLight</item>
+        <item>@color/holoOrangeDark</item>
+        <item>@color/holoOrangeLight</item>
+    </array>
+
+</resources>

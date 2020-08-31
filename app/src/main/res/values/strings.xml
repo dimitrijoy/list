@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- app name -->
+    <string name="app_name">List</string>
+
+    <!-- actions -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_create">Create</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="action_set">Set</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_undo">Undo</string>
+
+    <!-- messages -->
+    <string name="msg_delete_all_items">Are you sure? This will permanently delete all items in the list.</string>
+    <string name="msg_delete_list">Are you sure? This will permanently delete the list and its contents.</string>
+    <string name="msg_delete_item">Are you sure? This will permanently delete the item.</string>
+    <string name="msg_delete_note">Are you sure? This will permanently delete the note.</string>
+    <string name="msg_item_completed">Item completed</string>
+    <string name="msg_item_removed_from_favorites">Item removed from Favorites</string>
+    <string name="msg_item_deleted">Item deleted</string>
+
+    <!-- titles -->
+    <string name="title_alphabetical">Alphabetical</string>
+    <string name="title_completed">Completed</string>
+    <string name="title_delete_all_items">Delete all items</string>
+    <string name="title_delete_list">Delete list</string>
+    <string name="title_delete_item">Delete item</string>
+    <string name="title_delete_note">Delete note</string>
+    <string name="title_due_date">Due date</string>
+    <string name="title_edit_list">Edit list</string>
+    <string name="title_empty_note">Empty note</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_list_color">Color</string>
+    <string name="title_list_title">List title</string>
+    <string name="title_item_hint">New item</string>
+    <string name="title_new_list">New list</string>
+    <string name="title_notes">Notes</string>
+    <string name="title_note_text_hint">Note</string>
+    <string name="title_order_created">Order created</string>
+    <string name="title_quick_access">Quick access</string>
+    <string name="title_reminder">Reminder</string>
+    <string name="title_search_hint">Search for items…</string>
+    <string name="title_sort_by">Sort by</string>
+    <string name="title_title_hint">Title</string>
+    <string name="title_upcoming">Upcoming</string>
+    <string name="title_your_list">Your lists</string>
+
+    <!-- CONSIDER REMOVING -->
+    <string name="msg_favorites_hint">Try pressing the star on some items to add them to Favorites</string>
+    <string name="msg_notes_hint">Save your impromptu creativity, thoughts, ideas, and more in Notes</string>
+    <string name="msg_upcoming_hint">All items with assigned due dates will appear here</string>
+
+    <!-- icons -->
+    <string name="ic_small_circle">●</string>
+    <string name="ic_large_circle">⬤</string>
+
+</resources>

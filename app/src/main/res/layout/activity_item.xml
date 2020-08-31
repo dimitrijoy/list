@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    tools:context=".activities.ItemActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/image_favorite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toStartOf="@id/image_mark"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_star_border"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="favoriteItem" />
+
+            <ImageButton
+                android:id="@+id/image_mark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toStartOf="@id/image_delete"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_check"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="markItem" />
+
+            <ImageButton
+                android:id="@+id/image_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_delete"
+                android:onClick="deleteItem" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:theme="@style/EditTextTheme"
+            android:background="@null"
+            android:backgroundTint="@color/colorTertiary"
+            android:fontFamily="@font/roboto"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="96"
+            android:textColor="@color/colorAccent"
+            android:hint="@string/title_title_hint"
+            android:textColorHint="@color/colorSecondaryVariant"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorTertiary" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <Button
+                android:id="@+id/button_item_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/btn_rounded_border"
+                android:fontFamily="@font/roboto"
+                android:text="@string/title_due_date"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="4dp"
+                android:onClick="showDatePickerDialog" />
+
+            <Button
+                android:id="@+id/button_item_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/btn_rounded_border"
+                android:fontFamily="@font/roboto"
+                android:text="@string/title_reminder"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:drawableStart="@drawable/ic_alarm_clock"
+                android:drawablePadding="4dp"
+                android:onClick="showTimePickerDialog" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorTertiary"/>
+
+    </LinearLayout>
+
+</LinearLayout>
